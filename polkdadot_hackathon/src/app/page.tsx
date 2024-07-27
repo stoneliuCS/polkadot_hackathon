@@ -1,12 +1,13 @@
-import React from "react"
-import { Button, Card, CardBody } from "@nextui-org/react"
+import React from "react";
+import { Button } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <div className="flex justify-center">
-      <div className="text-9xl">
-        <h1> Untitled Battle </h1>
+    <div className="flex justify-center items-center h-screen">
+      <div className="flex flex-col items-center">
+        <h1 className="text-8xl">Untitled Battle</h1>
+        <Button>Start Game</Button>
       </div>
     </div>
-  )
+  );
 }
