@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NextUIProvider>
           <div className="h-screen p-8">
-            <Card className="w-full h-full">
+            <Card className="w-full h-full" shadow="lg">
               <CardBody>
                 {children}
               </CardBody>
