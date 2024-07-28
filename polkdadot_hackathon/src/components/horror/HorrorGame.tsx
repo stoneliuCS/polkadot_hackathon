@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import { Howl, Howler } from 'howler';
 import './HorrorGame.css';
@@ -7,7 +8,7 @@ interface Position {
   y: number;
 }
 
-const gridSize = 5;
+const gridSize = 10;
 const totalClues = 5;
 const gameTime = 150; // 2.5 minutes in seconds
 
@@ -154,7 +155,7 @@ const HorrorGame: React.FC = () => {
     let creditChange;
     if (won) {
       creditChange = 10; // If all clues found, give maximum credits
-      setMessage(`Game over! You won! Credits: +${creditChange}`);
+      setMessage(` You won! Credits: +${creditChange}`);
     } else {
       switch (foundClues) {
         case 1:

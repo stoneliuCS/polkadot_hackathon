@@ -1,5 +1,6 @@
-"use client"
-import Game from "@/components/Game"
-export default function battle() {
-  return <Game />
+import GuessGame from "@/components/Game"
+import HorrorGame from "@/components/horror/HorrorGame"
+
+export default function Game() {
+  return <HorrorGame />
 }
