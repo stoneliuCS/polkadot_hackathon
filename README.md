@@ -76,12 +76,6 @@ To integrate with Unique Network and Polkadot:
 ![Game Start](./screenshots/game-start.png)
 *Caption: The game start screen.*
 
-![In-Game](./screenshots/in-game.png)
-*Caption: In-game screenshot.*
-
-![Game Over](./screenshots/game-over.png)
-*Caption: Game over screen.*
-
 ## Videos
 
 ![Gameplay Video](./videos/gameplay-video.mp4)
