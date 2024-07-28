@@ -1,5 +1,5 @@
 "use client"
-import { Button } from "@nextui-org/react"
+import { Button, Spinner } from "@nextui-org/react"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 
@@ -109,7 +109,8 @@ export default function CreatePlayer() {
       {loading && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
           <div className="bg-white p-4 rounded-lg flex flex-col items-center">
-            <p>Loading...</p>
+            <Spinner/>
+            <p>Generating NFT...</p>
           </div>
         </div>
       )}
