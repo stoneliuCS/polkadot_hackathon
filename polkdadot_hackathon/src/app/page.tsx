@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col items-center">
-        <h1 className="text-8xl">Untitled Battle</h1>
+        <h1 className="text-8xl mb-4">Untitled Battle</h1>
         <Link href={"/create-player"}>
           <Button>Start Game</Button>
         </Link>

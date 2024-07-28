@@ -1,11 +1,24 @@
 import sdk from "@unique-nft/sdk"
 
 export async function createCollection(Sdk: sdk, address: string) {
-  const { parsed, error } = await Sdk.collection.create.submitWaitResult({
-    address,
+  const { parsed, error } = await Sdk.collection.createV2({
     name: "Player Collection",
     description: "Player Collection Description",
-    tokenPrefix: "TST",
+    symbol: "PLAYER",
+    permissions: { nesting: { collectionAdmin: true } },
+    encodeOptions: {
+      defaultPermission: {collectionAdmin: true, tokenOwner: true, mutable: true},
+      overwriteTPPs: [
+        {
+          key: "tokenData",
+          permission: {
+            collectionAdmin: true,
+            tokenOwner: false,
+            mutable: true,
+          },
+        },
+      ],
+    },
   })
 
   if (error) throw Error("Error occurred while creating a collection")
@@ -13,6 +26,6 @@ export async function createCollection(Sdk: sdk, address: string) {
 
   const { collectionId } = parsed
   const collection = await Sdk.collection.get({ collectionId })
-  const nft = await Sdk.token.create({ collectionId })
-  return { collection, nft }
+
+  return collection
 }

@@ -1,0 +1,18 @@
+<svg width="200" height="400" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head -->
+  <circle cx="50" cy="20" r="10" stroke="black" stroke-width="2" fill="none" />
+  <!-- Body -->
+  <line x1="50" y1="30" x2="50" y2="100" stroke="black" stroke-width="2" />
+  <!-- Left Arm -->
+  <line x1="50" y1="40" x2="30" y2="70" stroke="black" stroke-width="2" />
+  <!-- Right Arm -->
+  <line x1="50" y1="40" x2="70" y2="70" stroke="black" stroke-width="2" />
+  <!-- Left Leg -->
+  <line x1="50" y1="100" x2="30" y2="150" stroke="black" stroke-width="2" />
+  <!-- Right Leg -->
+  <line x1="50" y1="100" x2="70" y2="150" stroke="black" stroke-width="2" />
+  <!-- Left Boxing Glove -->
+  <circle cx="30" cy="70" r="5" stroke="black" stroke-width="2" fill="red" />
+  <!-- Right Boxing Glove -->
+  <circle cx="70" cy="70" r="5" stroke="black" stroke-width="2" fill="red" />
+</svg>
