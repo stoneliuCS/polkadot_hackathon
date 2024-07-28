@@ -73,11 +73,12 @@ To integrate with Unique Network and Polkadot:
 
 ## Screenshots
 
-![Game Start](./screenshots/game-start.png)
-*Caption: The game start screen.*
+<img width="1440" alt="Screenshot 2024-07-28 at 12 02 55 PM" src="https://github.com/user-attachments/assets/bd7adc94-7f58-43cf-b3de-e13722768529">
+
+<img width="1440" alt="Screenshot 2024-07-28 at 12 03 24 PM" src="https://github.com/user-attachments/assets/27c85dbc-10a2-4f24-83c5-b20984f1abb4">
+
+
 
 ## Videos
 
-![Gameplay Video](./videos/gameplay-video.mp4)
-*Caption: Full gameplay video.*
 
